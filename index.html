@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Sidebar With Bootstrap</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class=" h-100">
+                <div class="sidebar-logo">
+                    <img src="image-ensa.png" class="img-fluid" alt="">
+                </div>
+                <!-- Sidebar Navigation -->
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        Service client
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-list pe-2"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages"
+                            aria-expanded="false" aria-controls="pages">
+                            <i class="fa-regular fa-file-lines pe-2"></i>
+                            Categorie
+                        </a>
+                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">web</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Mobile</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Designe</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item ">
+                        <a href="messenger/index.php" class="sidebar-link">
+                            <i class="fa-solid fa-comments me-2"></i>
+                            chat
+                        </a>
+                    </li>
+                    <li class="sidebar-item ">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-bookmark me-2"></i>
+                            Favorit
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#auth"
+                            aria-expanded="false" aria-controls="auth">
+                            <i class="fa-regular fa-user pe-2"></i>
+                            Login
+                        </a>
+                        <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="login/index.php" class="sidebar-link">Login</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="login/index.php" class="sidebar-link">Register</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-header">
+                        Admin space
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#multi"
+                            aria-expanded="false" aria-controls="multi">
+                            <i class="fa-solid fa-share-nodes pe-2"></i>
+                            Dashboard
+                        </a>
+                        <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
+                                    Admin Panel
+                                </a>
+                                <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
+                                    <li class="sidebar-item">
+                                        <a href="#" class="sidebar-link">control board</a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="#" class="sidebar-link">reports</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>         
+            </div>
+            
+        </aside>
+        <!-- Main Component -->
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom d-flex justify-content-between   ">
+                <!-- Button for sidebar toggle -->
+                <div class="">
+                    <button class="btn" type="button" data-bs-theme="dark">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- <img src="image-ensa.png" class="image1 img-fluid" alt=""> -->
+                </div>
+                
+                <input type="search" class="w-50 search form-control text-center" id="datatable-search-input" placeholder="search" >
+
+
+                  
+                <div class="test  ms-3">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="avatar.PNG" alt="" width="32" height="32" class="rounded-circle me-2">
+                        <strong>oussama</strong>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1" style="">
+                        <li><a class="dropdown-item" href="addproj.html">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+                   
+                    <div class="projects mt-5 mb-5">
+                        <div class="project1 d-flex justify-content-between pe-1">
+                            <div class="d-flex gap-3">
+                                <img src="gray-img.png" class="img-fluid p-1 projectimg  " alt="" >
+                                <div class="mt-3 desc  text-white d-flex flex-column ">
+                                    <p class="title">home page pour un site ecomerce</p>
+                                    <p class="title2">created by : userID</p>
+                                    <div class="prix title ">100$</div>
+                                </div>
+                               
+                            </div>
+                            <div class="mt-5 text-white">
+                                
+                                <div class="avatars  ">
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                    
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                        
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                        
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                              
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="project1 d-flex justify-content-between pe-1">
+                            <div class="d-flex gap-3">
+                                <img src="gray-img.png" class="img-fluid p-1 projectimg  " alt="" >
+                                <div class="mt-2 desc  text-white d-flex flex-column ">
+                                    <p class="title">home page pour un site ecomerce</p>
+                                    <p class="title2">created by : userID</p>
+                                    <div class="prix title ">100$</div>
+                                </div>
+                               
+                            </div>
+                            <div class="mt-5 text-white">
+                                
+                                <div class="avatars  ">
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                    
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                        
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                        
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                              
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="project1 d-flex justify-content-between pe-1">
+                            <div class="d-flex gap-3">
+                                <img src="gray-img.png" class="img-fluid p-1 projectimg  " alt="" >
+                                <div class="mt-2 desc  text-white d-flex flex-column ">
+                                    <p class="title">home page pour un site ecomerce</p>
+                                    <p class="title2">created by : userID</p>
+                                    <div class="prix title ">100$</div>
+                                </div>
+                               
+                            </div>
+                            <div class="mt-5 text-white">
+                                
+                                <div class="avatars  ">
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                    
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                        
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                        
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                              
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="project1 d-flex justify-content-between pe-1">
+                            <div class="d-flex gap-3">
+                                <img src="gray-img.png" class="img-fluid p-1 projectimg  " alt="" >
+                                <div class="mt-2 desc  text-white d-flex flex-column ">
+                                    <p class="title">home page pour un site ecomerce</p>
+                                    <p class="title2">created by : userID</p>
+                                    <div class="prix title ">100$</div>
+                                </div>
+                               
+                            </div>
+                            <div class="mt-5 text-white">
+                                
+                                <div class="avatars  ">
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                    
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                        
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                        
+                                    <img class="avatar-icon" alt="" src="avatar.PNG" />
+                              
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                
+
+              </div>      
+          </div>
+                </div>
+                <footer class="footer">
+                    <div class="row">
+                        <div class="col">
+                            <img src="image-ensa.png" class="logo">
+                            <ul>
+                                
+                                    <p>Université Hassan 1er</p>
+                                    <p>Ecole Nationale des Sciences Appliquées Berrechid.</p>
+                                
+                                <li>   
+                                    <i class="fas fa-home"></i>
+                                    <p>Adresse: Avenue de l'université, B.P :218 Berrechid. </p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-mobile-screen"></i>
+                                    <p>Tel: 05-22-32-47-58</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope-open "></i>
+                                    <p>Fax: 05-22-53-45-30</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <p>Email: ensa.etudes@uhp.ac.ma</p>
+                                </li>
+                            </ul>
+                            
+                         
+                        </div>
+                        <div class="col">
+                            <h3>Links</h3>
+                            <a href="#"><p>Home</p></a>
+                            <a href="#"><p>a propos</p></a>
+                            <a href="#"><p>contact</p></a>
+                        </div>
+                        <div class="col">
+                            <h3> Newsletter</h3>
+                            <p>Abonnez-vous à notre newsletter si vous voulez vous tenir informé(e) de l’actualité et événements importants organisés à l'ENSA Berrechid.</p>
+                           <form>
+                            <i class="far fa-envelope"></i>
+                            <input type="email" placeholder="Enter your E-mail" required>
+                            <button type="submit"> <i class="fas fa-arrow-right"></i></button>
+                        </form>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/people/LÉcole-Nationale-des-Sciences-Appliquées-de-Berrechid/100057429100937/#_=_"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/ensaberrechid/"> <i class="fab fa-instagram"></i></a>
+                            <a href="https://fr.linkedin.com/school/ecole-nationale-des-sciences-appliquées-de-berrechid/"><i class="fab fa-linkedin-in"></i></a>                    
+                        </div>
+                        </div>      
+                    </div>
+                    <hr>
+                    <p class="copyright">© 2020 ENSA Berrechid. </p>
+            </footer>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

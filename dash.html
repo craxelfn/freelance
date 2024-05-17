@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="addrpoj.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="dashboard.css">
+    
+    <title>Sidebar With Bootstrap</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class=" h-100">
+                <div class="sidebar-logo">
+                    <img src="image-ensa.png" class="img-fluid" alt="">
+                </div>
+                <!-- Sidebar Navigation -->
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        Service client
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-list pe-2"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages"
+                            aria-expanded="false" aria-controls="pages">
+                            <i class="fa-regular fa-file-lines pe-2"></i>
+                            Categorie
+                        </a>
+                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">web</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Mobile</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Designe</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item ">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-comments me-2"></i>
+                            chat
+                        </a>
+                    </li>
+                    <li class="sidebar-item ">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-bookmark me-2"></i>
+                            Favorit
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#auth"
+                            aria-expanded="false" aria-controls="auth">
+                            <i class="fa-regular fa-user pe-2"></i>
+                            Login
+                        </a>
+                        <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Login</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Register</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-header">
+                        Admin space
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#multi"
+                            aria-expanded="false" aria-controls="multi">
+                            <i class="fa-solid fa-share-nodes pe-2"></i>
+                            Dashboard
+                        </a>
+                        <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
+                                    Admin Panel
+                                </a>
+                                <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
+                                    <li class="sidebar-item">
+                                        <a href="#" class="sidebar-link">control board</a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="#" class="sidebar-link">reports</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>         
+            </div>
+            
+        </aside>
+        <!-- Main Component -->
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom d-flex justify-content-between   ">
+                <!-- Button for sidebar toggle -->
+                <div class="">
+                    <button class="btn" type="button" data-bs-theme="dark">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- <img src="image-ensa.png" class="image1 img-fluid" alt=""> -->
+                </div>
+                
+                <input type="search" class="form-control text-center" id="datatable-search-input" placeholder="search" style="max-width: 1200px; ">
+
+
+                  
+                <div class="test  ms-3">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="avatar.PNG" alt="" width="32" height="32" class="rounded-circle me-2">
+                        <strong>oussama</strong>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1" style="">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+            <main class="content px-3 py-2">
+                <div class="container  mt-5  mb-5">
+                    <div class="row ">
+                        <div class="col-lg-4">
+                            <div class="card text-uppercase numproj mb-3">
+                                <div class="card-body">
+                                    <h4>Profit : </h4>
+                                    <h1 class="text-center mt-3 text-white-50">000$</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card text-uppercase profit mb-3">
+                                <div class="card-body">
+                                    <h4>Project number  : </h4>
+                                    <h1 class="text-center mt-3 text-white-50">000</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-uppercase proj-num mb-3">
+                            <div class="card numproj">
+                                <div class="card-body">
+                                    <h4>reports : </h4>
+                                    <h1 class="text-center mt-3 text-white-50">00</h1>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card crudtab">
+                                <div class="card-header">
+                                    <h4>details
+                                       
+                                        <select class="form-select float-end" aria-label="Default select example">
+                                            <option selected>ALL</option>
+                                            <option value="1">Last week</option>
+                                            <option value="2">Last months</option>
+                                            <option value="3">sponsoring requests</option>
+                                            <option value="4">no freelancers</option>
+                                          </select>
+                                    </h4>
+                                </div>
+                                <div class="card-body  ">
+            
+                                    <table class="table table-bordered  text-center  table-dark custom-table">
+                                        <thead>
+                                            <tr>
+                                                <th>PROJ-ID</th>
+                                                <th>User-id</th>
+                                                <th>Freelancer-id</th>
+                                                <th>input-date</th>
+                                                <th >Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td class=" d-flex gap-2">
+                                                                <div >
+                                                                <a href="" class=" mb-2 btn btn-info btn-sm">View-project</a>
+                                                                <a href="" class=" mb-2 btn btn-info btn-sm">view-input</a>
+                                                                 </div>
+                                                                 <div class="">
+                                                                <form action="" method="POST" class="d-inline">
+                                                                    <button type="submit" name="delete_student" value="student_id" class="btn btn-success btn-sm  mb-2">accept</button> 
+                                                                </form>
+                                                                <form action="" method="POST" class="d-inline">
+                                                                <button type="submit" name="delete_student" value="student_id" class="btn btn-danger btn-sm mb-2">Delete</button> 
+                                                                </form>
+                                                            
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td class="d-flex gap-2">
+                                                                <div >
+                                                                <a href="" class=" mb-2 btn btn-info btn-sm">View-project</a>
+                                                                <a href="" class=" mb-2 btn btn-info btn-sm">view-input</a>
+                                                                 </div>
+                                                                 <div class="">
+                                                                <form action="" method="POST" class="d-inline">
+                                                                    <button type="submit" name="delete_student" value="student_id" class="btn btn-success btn-sm  mb-2">accept</button> 
+                                                                </form>
+                                                                <form action="" method="POST" class="d-inline">
+                                                                <button type="submit" name="delete_student" value="student_id" class="btn btn-danger btn-sm mb-2">Delete</button> 
+                                                                </form>
+                                                            
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td class=" d-flex gap-2">
+                                                                <div >
+                                                                <a href="" class=" mb-2 btn btn-info btn-sm">View-project</a>
+                                                                <a href="" class=" mb-2 btn btn-info btn-sm">view-input</a>
+                                                                 </div>
+                                                                 <div class="">
+                                                                <form action="" method="POST" class="d-inline">
+                                                                    <button type="submit" name="delete_student" value="student_id" class="btn btn-success btn-sm  mb-2">accept</button> 
+                                                                </form>
+                                                                <form action="" method="POST" class="d-inline">
+                                                                <button type="submit" name="delete_student" value="student_id" class="btn btn-danger btn-sm mb-2">Delete</button> 
+                                                                </form>
+                                                            
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td class=" d-flex gap-2">
+                                                                <div >
+                                                                <a href="" class=" mb-2 btn btn-info btn-sm">View-project</a>
+                                                                <a href="" class=" mb-2 btn btn-info btn-sm">view-input</a>
+                                                                 </div>
+                                                                 <div class="">
+                                                                <form action="" method="POST" class="d-inline">
+                                                                    <button type="submit" name="delete_student" value="student_id" class="btn btn-success btn-sm  mb-2">accept</button> 
+                                                                </form>
+                                                                <form action="" method="POST" class="d-inline">
+                                                                <button type="submit" name="delete_student" value="student_id" class="btn btn-danger btn-sm mb-2">Delete</button> 
+                                                                </form>
+                                                            
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td class=" d-flex gap-2">
+                                                                <div >
+                                                                <a href="" class=" mb-2 btn btn-info btn-sm">View-project</a>
+                                                                <a href="" class=" mb-2 btn btn-info btn-sm">view-input</a>
+                                                                 </div>
+                                                                 <div class="">
+                                                                <form action="" method="POST" class="d-inline">
+                                                                    <button type="submit" name="delete_student" value="student_id" class="btn btn-success btn-sm  mb-2">accept</button> 
+                                                                </form>
+                                                                <form action="" method="POST" class="d-inline">
+                                                                <button type="submit" name="delete_student" value="student_id" class="btn btn-danger btn-sm mb-2">Delete</button> 
+                                                                </form>
+                                                            
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td class=" d-flex gap-2">
+                                                                <div >
+                                                                <a href="" class=" mb-2 btn btn-info btn-sm">View-project</a>
+                                                                <a href="" class=" mb-2 btn btn-info btn-sm">view-input</a>
+                                                                 </div>
+                                                                 <div class="">
+                                                                <form action="" method="POST" class="d-inline">
+                                                                    <button type="submit" name="delete_student" value="student_id" class="btn btn-success btn-sm  mb-2">accept</button> 
+                                                                </form>
+                                                                <form action="" method="POST" class="d-inline">
+                                                                <button type="submit" name="delete_student" value="student_id" class="btn btn-danger btn-sm mb-2">Delete</button> 
+                                                                </form>
+                                                            
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                     
+                                            
+                                        </tbody>
+                                    </table>
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+          </div>
+                </div>
+
+            
+
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+        
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
